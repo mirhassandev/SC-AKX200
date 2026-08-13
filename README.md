@@ -58,10 +58,23 @@ A professional, feature-rich desktop application for controlling Panasonic SC-AK
 - **Bluetooth adapter** with SPP support
 - **Panasonic SC-AKX200** audio system
 
+## �️ Repository Layout
+
+This repository contains the source code and the Windows installer project, but it intentionally does not store compiled build artifacts.
+
+- `panasonic_akx200_control.py` — main desktop application
+- `requirements.txt` — Python dependencies
+- `install_deps.py` — silent dependency installer
+- `SC-AKX200.bat` and `SC-AKX200.vbs` — Windows launchers
+- `SC-AKX200-Setup.iss` — Inno Setup installer source
+- `Guillendesign-Variations-3-Music.ico` and `wizard.bmp` — app branding and installer graphics
+- `README.md`, `LICENSE`, `.gitignore` — project documentation and metadata
+- `Output/` — ignored build directory created during release packaging, not committed to source control
+
 ## 🚀 Installation
 
 ### Option 1: Installer (Recommended for Users)
-1. Download `SC-AKX200-Setup.exe` from Releases
+1. Download the release asset `SC-AKX200-Setup.exe` from the GitHub Releases page
 2. Run the installer with Admin privileges
 3. Follow the installation wizard
 4. Launch from Start Menu or Desktop shortcut
@@ -90,7 +103,20 @@ pip install -r requirements.txt
 python panasonic_akx200_control.py
 ```
 
-## 📖 Usage
+## � Release Workflow
+
+The repo keeps source and installer configuration under version control, while release builds are generated at packaging time.
+
+### Recommended release flow
+1. Update version numbers in `SC-AKX200-Setup.iss` and the app metadata if needed
+2. Commit and push to the main branch
+3. Create a Git tag such as `v1.0.0`
+4. Publish the GitHub Release
+5. The release automation builds `SC-AKX200-Setup.exe` and uploads it as a release asset
+
+This keeps the Git repository clean and avoids storing generated binaries in source control.
+
+## �📖 Usage
 
 ### Getting Started
 1. **Connect Your Device**:
