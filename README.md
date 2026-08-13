@@ -129,7 +129,27 @@ pip install -r requirements.txt
 # Run the application
 python panasonic_akx200_control.py
 ```
+## 📥 Download & Access Policy
 
+**This repository is read-only** — users can download and clone the code, but cannot push changes directly to the main branch.
+
+### ✅ What You Can Do:
+- **Download** the installer from [GitHub Releases](https://github.com/mirhassandev/SC-AKX200/releases)
+- **Clone** the repository: `git clone https://github.com/mirhassandev/SC-AKX200.git`
+- **Fork** the repository to create your own version
+- **Review** the source code and documentation
+
+### ❌ What You Cannot Do:
+- Push changes directly to the main branch
+- Modify the official repository
+
+### 💡 Want to Contribute?
+If you find bugs or have improvements, please:
+1. Fork the repository
+2. Create a feature branch with your changes
+3. Submit a Pull Request for review
+
+All external contributions will be reviewed before merging into the main branch.
 ## � Release Workflow
 
 The repo keeps source and installer configuration under version control, while release builds are generated at packaging time.
