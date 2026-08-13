@@ -34,7 +34,34 @@ A professional, feature-rich desktop application for controlling Panasonic SC-AK
 - **Debug Panel**: Frame Tester for manual payload validation (Ctrl+Shift+I)
 - **Dark Professional UI**: Apple-adjacent color scheme with smooth 200ms transitions
 
-## 🔧 Technical Specifications
+## � Screenshots
+
+### Remote Control Interface
+The main control panel with 20+ buttons for comprehensive device control:
+
+![Remote Control](asset/sc-akx200remote_ss1.png)
+
+### Debug Console
+Real-time protocol analysis and frame testing for developers:
+
+![Debug Console](asset/sc-akx200remote_ss2_debug_log.png)
+
+### D.Bass Control
+Dynamic Bass system with intensity levels and beat synchronization:
+
+![D.Bass Control](asset/sc-akx200_d.base.png)
+
+### Manual EQ Adjustment
+Fine-tuned audio control with Bass, Mid, Treble, and Surround toggles:
+
+![Manual EQ](asset/sc-akx200_manual_eq.png)
+
+### Preset EQ Modes
+14 genre-specific audio presets for one-click sound optimization:
+
+![Preset EQ](asset/sc-akx200_preset_eq.png)
+
+## �🔧 Technical Specifications
 
 ### SPP Protocol Implementation
 - **Frame Format**: `[0xAA (magic) | CMD_ID | LenHI | LenLO | ...payload... | Checksum]`
